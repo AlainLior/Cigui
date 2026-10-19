@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Política de privacidad · Cigu</title>
+<style>
+:root{--bg:#F3F4EF;--surface:#FFFFFF;--text:#142019;--muted:#56655B;--line:#DDE2DA;--accent:#1DB954;--ink:#0B6B35}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1512;--surface:#18211C;--text:#EEF3EE;--muted:#A9B7AD;--line:#2B3831;--ink:#7FE3A5}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+main{max-width:720px;margin:0 auto;padding:40px 20px 64px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:-.03em;font-size:19px}
+.mark{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:9px;background:var(--accent);color:#06230F;font-weight:800}
+h1{font-size:clamp(30px,6vw,42px);letter-spacing:-.04em;line-height:1.1;margin:28px 0 6px;text-wrap:balance}
+.updated{color:var(--muted);font-size:14px;margin:0 0 20px}
+h2{font-size:19px;letter-spacing:-.02em;margin:32px 0 8px}
+p{margin:0 0 12px;color:var(--muted);max-width:65ch}
+.intro{color:var(--text);font-size:17px}
+nav{margin-top:40px;padding-top:20px;border-top:1px solid var(--line);font-size:15px}
+a{color:var(--ink)}
+</style></head><body><main>
+<div class="brand"><span class="mark" aria-hidden="true">c.</span>Cigu</div>
+<h1>Política de privacidad</h1>
+<p class="updated">Actualizada el 28 de septiembre de 2026</p>
+<p class="intro">Cigu es una app para organizar las fechas de corte y de pago de tus tarjetas, tus gastos y tus presupuestos. La desarrolla Alain Linares, en República Dominicana. Esta política explica qué datos maneja la app y qué hace con ellos.</p>
+<h2>En resumen</h2>
+<p>Puedes usar Cigu sin cuenta: en ese caso todo lo que anotas se guarda sólo en tu teléfono.</p>
+<p>Si decides crear una cuenta (con Google o con tu correo), guardamos una copia de tus datos en Firebase, un servicio de Google, para que los recuperes si cambias de teléfono.</p>
+<p>No vendemos ni compartimos tus datos, no mostramos anuncios y no usamos herramientas de rastreo ni de analítica.</p>
+<h2>Qué datos guarda la app en tu teléfono</h2>
+<p>El nombre que escribes al empezar.</p>
+<p>Tus tarjetas: banco, alias, tipo, los últimos 4 dígitos si decides ponerlos, el día de corte y los días para pagar. Cigu nunca pide el número completo de la tarjeta, el CVV ni tu PIN.</p>
+<p>Los pagos que registras, tus gastos, tus pagos fijos, tus presupuestos y tus preferencias (apariencia, avisos). La tasa de interés que escribas en la calculadora se guarda en la tarjeta, sólo para volver a usarla.</p>
+<h2>Bloqueo con PIN (opcional)</h2>
+<p>Si activas el bloqueo, Cigu guarda en tu teléfono una huella cifrada del PIN (PBKDF2 con SHA-256 y una sal al azar), nunca el PIN. Esa huella no entra en tu copia en la nube ni en «Exportar copia».</p>
+<p>Si eliges desbloquear con huella o rostro, lo comprueba Android: Cigu sólo recibe si te identificaste o no, nunca tu huella ni tu cara.</p>
+<h2>Lo que compartes tú</h2>
+<p>Resumen del mes: la imagen se hace en tu teléfono y sólo sale si tú la compartes. Por defecto lleva porcentajes y días, no montos; los montos sólo aparecen si activas «Mostrar cuánto gasté».</p>
+<p>Compartir una tarjeta: el código lleva el banco, el alias, el tipo, el día de corte, los días para pagar y la moneda. Nunca los últimos dígitos, montos, pagos ni gastos. Va por la app que tú elijas (por ejemplo, WhatsApp); Cigu no lo envía a ningún servidor.</p>
+<h2>Cuenta y respaldo en la nube (opcional)</h2>
+<p>Si creas una cuenta, se guardan en Firebase Authentication tu correo, un identificador de usuario y, si entras con Google, el nombre de tu cuenta de Google. No vemos ni guardamos tu contraseña.</p>
+<p>Mientras tengas la sesión abierta, Cigu guarda en Cloud Firestore (Firebase) una copia de lo que anotas en la app: tu nombre, tus tarjetas (banco, alias, últimos 4 dígitos si los pusiste y fechas), pagos, gastos, presupuestos y ajustes. Se actualiza sola unos segundos después de cada cambio.</p>
+<p>Sólo tu cuenta puede leer tu copia: las reglas de la base de datos lo impiden a cualquier otra cuenta. Los datos viajan cifrados y Google los guarda cifrados. Como administrador del proyecto, el desarrollador podría técnicamente acceder a la base de datos; no consulta las copias y sólo lo haría para ayudarte si se lo pides o si una autoridad lo exige por ley.</p>
+<p>Los servidores de Google pueden estar fuera de la República Dominicana. Al crear la cuenta aceptas esa transferencia para este fin.</p>
+<p>Para qué se usa: sólo para respaldar y restaurar tus datos. No se usa para publicidad ni se comparte con terceros; Google actúa como proveedor del servicio.</p>
+<h2>Compras automáticas (opcional)</h2>
+<p>Si activas «Compras automáticas», Cigu usa el acceso a notificaciones de Android para leer, dentro de tu teléfono, los avisos de las apps que tú eliges (por ejemplo, Google Wallet o la app de tu banco).</p>
+<p>De cada aviso de compra toma el monto, el comercio, la fecha y los últimos 4 dígitos de la tarjeta, y lo anota como gasto. El resto del texto se descarta. Las notificaciones de apps que no elegiste no se leen ni se guardan; de ellas sólo se anota el nombre de la app cuando parece un aviso de compra, para que puedas marcarla si quieres.</p>
+<p>Nada de esto sale de tu teléfono. Puedes desactivarlo cuando quieras desde la app o en Ajustes de Android › Acceso a notificaciones.</p>
+<h2>Estados de cuenta que importas</h2>
+<p>Cuando importas un archivo CSV o PDF de tu banco, se lee en tu teléfono y no se guarda. Sólo se agregan los movimientos que tú marcas. Si el PDF tiene contraseña, se usa una sola vez para abrirlo y no se guarda.</p>
+<h2>Avisos</h2>
+<p>Los recordatorios de corte y de pago se programan en tu teléfono con las fechas de tus tarjetas. No incluyen montos ni pasan por ningún servidor.</p>
+<h2>Suscripción Cigu Pro</h2>
+<p>El pago lo procesa Google Play. Cigu no recibe los datos de tu tarjeta de pago ni de tu cuenta de Google: sólo la confirmación, en tu teléfono, de que la suscripción está activa.</p>
+<h2>Copias de seguridad y exportaciones</h2>
+<p>Si tienes activada la copia de seguridad de Android, el sistema puede incluir los datos de Cigu en la copia de tu cuenta de Google, que administra y cifra Google. Así recuperas tus datos al cambiar de teléfono.</p>
+<p>Si exportas una copia (JSON), un reporte (PDF o CSV) o tus fechas al calendario, el archivo va a donde tú decidas. Esos archivos no están cifrados: guárdalos en un lugar seguro.</p>
+<h2>Permisos que pide la app</h2>
+<p>Notificaciones: para avisarte antes de cada corte y fecha límite.</p>
+<p>Huella o rostro (sólo si lo activas en el bloqueo con PIN): lo comprueba Android.</p>
+<p>Acceso a notificaciones (sólo si activas Compras automáticas): para anotar tus compras.</p>
+<p>Iniciar al encender el teléfono: para volver a programar tus avisos después de reiniciarlo.</p>
+<p>Facturación de Google Play: para la suscripción Pro.</p>
+<p>Internet: para la suscripción de Google Play y, si tienes cuenta, para tu respaldo en la nube. Sin cuenta, tus datos no se envían a ningún lado.</p>
+<h2>Tus derechos</h2>
+<p>La Ley 172-13 sobre protección de datos personales de la República Dominicana te reconoce el derecho a acceder a tus datos, corregirlos, pedir que se borren y oponerte a su uso. Si vives en otro país, tu ley local puede darte derechos parecidos.</p>
+<p>Puedes ejercerlos tú mismo en cualquier momento: ver y corregir tus datos en la app, llevártelos con Perfil › Tus datos › Exportar copia, borrarlos del teléfono con Perfil › Tus datos › Eliminar mis datos y borrar tu cuenta y tu copia en la nube con Perfil › Cuenta y respaldo › Eliminar cuenta y copia.</p>
+<p>Si ya no tienes la app o no puedes entrar, escríbenos desde el correo de tu cuenta y la borraremos por ti (ver «Eliminar tu cuenta» en la web de Cigu).</p>
+<h2>Cuánto tiempo se guardan y cómo borrarlos</h2>
+<p>En el teléfono: hasta que los borres en Perfil › Tus datos › Eliminar mis datos, borrando los datos de la app en Ajustes de Android o desinstalándola. Si hay una copia de seguridad de Android, puedes borrarla desde tu cuenta de Google.</p>
+<p>En la nube: mientras tengas la cuenta. Al eliminarla se borran de inmediato tu cuenta y tu copia; Google puede tardar un tiempo adicional en quitarlas de sus copias internas de seguridad. Salir de la cuenta no borra la copia.</p>
+<h2>Seguridad</h2>
+<p>Los datos se guardan en el almacenamiento privado de la app, que otras apps no pueden leer. Cualquiera que tenga tu teléfono desbloqueado puede abrir Cigu: te recomendamos usar bloqueo de pantalla.</p>
+<h2>Menores de edad</h2>
+<p>Cigu es para personas mayores de 18 años que tienen tarjetas de crédito. Al crear tu perfil confirmas que eres mayor de edad. Si sabemos que una cuenta es de un menor, la borraremos.</p>
+<h2>Cambios en esta política</h2>
+<p>Si esta política cambia, lo verás aquí y en la app con la nueva fecha de actualización.</p>
+<h2>Contacto</h2>
+<p>Para cualquier duda, queja o solicitud escribe a Alain Linares al correo de soporte que aparece en la ficha de Cigu en Google Play.</p>
+<nav><a href="terminos.html">Términos de uso</a> · <a href="./">Cigu</a></nav>
+</main></body></html>
